@@ -13,4 +13,4 @@ spec:
       - name: mc-a 
         image: nkravi/servicea
         ports:
-        - containerPort: 1234
+        - containerPort: 4000
