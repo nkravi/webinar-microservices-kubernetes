@@ -1,0 +1,18 @@
+apiVersion: apps/v1beta1
+kind: Deployment
+metadata:
+  name: deployement-b
+spec:
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: serviceb
+    spec:
+      containers:
+      - name: mc-b 
+        image: nkravi/serviceb
+        ports:
+        - containerPort: 4001
+
+        

@@ -1,0 +1,16 @@
+apiVersion: apps/v1beta1
+kind: Deployment
+metadata:
+  name: deployement-a
+spec:
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: servicea
+    spec:
+      containers:
+      - name: mc-a 
+        image: nkravi/servicea
+        ports:
+        - containerPort: 1234
